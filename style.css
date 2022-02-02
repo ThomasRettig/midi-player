@@ -7,7 +7,7 @@
 body {
   font-family: 'Inter', system-ui, sans-serif;
   padding: 2vw;
-  accent-color: teal;
+  accent-color: royalblue;
 }
 
 a {
@@ -45,7 +45,7 @@ section midi-player::part(control-panel) {
 }
 
 section midi-player::part(play-button) {
-  color: #353;
+  color: royalblue;
   background-color: #eee;
   border-radius: 20px;
   transition: all 0.2s;
@@ -66,23 +66,28 @@ section midi-visualizer .piano-roll-visualizer {
   margin-top: 0;
   overflow: auto;
 }
+
 section midi-visualizer svg rect.note {
   opacity: 0.6;
   stroke-width: 2;
 }
+
 section midi-visualizer svg rect.note[data-instrument="0"]{
-  fill: #e22;
-  stroke: #500;
+  fill: teal;
+  stroke: transparent;
 }
+
 section midi-visualizer svg rect.note[data-instrument="2"]{
-  fill: #2ee;
-  stroke: #055;
+  fill: crimson;
+  stroke: transparent;
 }
+
 section midi-visualizer svg rect.note[data-is-drum="true"]{
-  fill: #888;
-  stroke: #888;
+  fill: royalblue;
+  stroke: transparent;
 }
+
 section midi-visualizer svg rect.note.active {
-  opacity: 0.9;
-  stroke: #000;
+  opacity: green;
+  stroke: transparent;
 }
