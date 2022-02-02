@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', system-ui;
+  font-family: 'Inter', system-ui, sans-serif;
   padding: 2vw;
 }
 
@@ -47,7 +47,6 @@ section midi-player::part(control-panel) {
 
 section midi-player::part(play-button) {
   color: #353;
-  border: 2px solid currentColor;
   background-color: #eee;
   border-radius: 20px;
   transition: all 0.2s;
@@ -58,7 +57,7 @@ section midi-player::part(play-button):hover {
 }
 
 section midi-player::part(time) {
-  font-family: monospace;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 /* Custom visualizer style */
