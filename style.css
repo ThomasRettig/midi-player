@@ -36,8 +36,6 @@ a {
 section midi-player {
   display: block;
   width: inherit;
-  margin: 4px;
-  margin-bottom: 0;
 }
 
 section midi-player::part(control-panel) {
