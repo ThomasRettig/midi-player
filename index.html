@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Midi Player</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <p><a href="https://github.com/cifkao/html-midi-player" target="_blank">← Go back to repo</a></p>
+    <section id="section">
+      <midi-player
+      src="hello-foe-jazz.mid"
+      sound-font visualizer="#section midi-visualizer">
+      </midi-player>
+      <midi-visualizer
+      src="https://cdn.jsdelivr.net/gh/cifkao/html-midi-player@2b12128/jazz.mid">
+      </midi-visualizer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+  </body>
+</html>
