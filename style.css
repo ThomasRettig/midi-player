@@ -32,7 +32,6 @@ section midi-player::part(play-button) {
   background-color: #4d4;
   border-radius: 20px;
   transition: all 0.2s;
-  content: 'hello';
 }
 
 section midi-player::part(play-button):hover {
@@ -40,6 +39,7 @@ section midi-player::part(play-button):hover {
   background-color: #5f5;
   border-radius: 10px;
 }
+
 section midi-player::part(time) {
   font-family: monospace;
 }
