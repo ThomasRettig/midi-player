@@ -1,3 +1,7 @@
+:root {
+  --accent-color: royalblue;
+}
+
 *,
 *::before,
 *::after {
@@ -7,12 +11,17 @@
 body {
   font-family: 'Inter', system-ui, sans-serif;
   padding: 2vw;
-  accent-color: royalblue;
+  accent-color: var(--accent-color);
 }
 
 a {
+  transition: 0.2s;
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
 }
 
 .piano-roll-visualizer::-webkit-scrollbar {
@@ -45,7 +54,7 @@ section midi-player::part(control-panel) {
 }
 
 section midi-player::part(play-button) {
-  color: royalblue;
+  color: var(--accent-color);
   background-color: #eee;
   border-radius: 20px;
   transition: all 0.2s;
